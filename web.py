@@ -19,7 +19,9 @@ def App():
     )
 
     # تحديد المسار الكامل لملف قاعدة البيانات
-    db_path = r"C:\Users\INFOLAB\Desktop\yaoub\U.db"  # لاحظ استخدام r قبل النص للتعامل مع الشرطة العكسية "\"
+    # db_path = r"C:\Users\INFOLAB\Desktop\yaoub\U.db"  # لاحظ استخدام r قبل النص للتعامل مع الشرطة العكسية "\"
+    db_path = "U.db"
+
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
