@@ -2,6 +2,8 @@
 FROM python:3.10-slim
 
 WORKDIR /app
+RUN chmod -R 777 /app
+
 
 COPY requirements.txt .
 
