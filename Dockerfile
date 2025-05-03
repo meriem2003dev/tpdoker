@@ -12,5 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 EXPOSE 9090
+ENTRYPOINT ["python", "web.py"]
 
-CMD ["python", "web.py"]
