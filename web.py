@@ -56,4 +56,7 @@ def App():
         conn.close()
 
 # تشغيل التطبيق
-start_server(App, port=9090, debug=True)
+# start_server(App, port=9090, debug=True)
+import os
+start_server(App, port=int(os.environ.get('PORT', 8080)), debug=True)
+
